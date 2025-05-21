@@ -11,7 +11,7 @@ from sklearn.preprocessing import LabelEncoder
 def train_model(csv_file):
     try:
         df = pd.read_csv(
-            'C:/Users/MISHO/Desktop/My Modules/Honours/Artificial Intelligence - BICT411 (1st)/Project/imdb.csv',
+            '/Project/imdb.csv',
             encoding='utf-8', on_bad_lines='skip'
         )
     except Exception as e:
