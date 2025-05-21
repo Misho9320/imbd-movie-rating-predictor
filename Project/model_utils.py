@@ -10,10 +10,7 @@ from sklearn.preprocessing import LabelEncoder
 # Train and save model
 def train_model(csv_file):
     try:
-        df = pd.read_csv(
-            '/Project/imdb.csv',
-            encoding='utf-8', on_bad_lines='skip'
-        )
+        df = pd.read_csv(csv_file,encoding='utf-8', on_bad_lines='skip')
     except Exception as e:
         raise ValueError(f"Failed to load CSV: {e}")
 
