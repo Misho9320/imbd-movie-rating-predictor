@@ -5,7 +5,7 @@ from model_utils import train_model, predict
 st.set_page_config(page_title="IMDB Rating Predictor", layout="centered")
 
 st.title("🎬 Predict IMDB Movie Ratings")
-st.write("Upload a CSV file with movie features (including `imdb_rating` for training) or without for prediction.")
+st.write("Upload a CSV file with movie features (including `rating` for training) or without for prediction.")
 
 # Upload file
 file = st.file_uploader("Upload your CSV", type=["csv"])
@@ -38,4 +38,4 @@ if file:
         except Exception as e:
             st.error(f"Prediction failed: {e}")
     else:
-        st.warning("Please first upload a dataset containing 'imdb_rating' to train the model.")
+        st.warning("Please first upload a dataset containing 'Rating_from_10' to train the model.")
