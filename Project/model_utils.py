@@ -22,7 +22,7 @@ def train_model(csv_path):
         label_encoders[col] = le
 
     if 'Rating_from_10' not in df.columns:
-        raise ValueError("Column 'imdb_rating' is required in the dataset.")
+        raise ValueError("Column 'Rating_from_10' is required in the dataset.")
 
     X = df.drop('Rating_from_10', axis=1)
     y = df['Rating_from_10']
