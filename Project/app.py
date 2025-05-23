@@ -56,7 +56,7 @@ if file:
             'Year': st.number_input("Release Year", min_value=1900, max_value=2100, value=2020),
             'Runtime_in_min': st.number_input("Runtime (minutes)", min_value=1, value=90),
             'Genre': st.text_input("Genre"),
-            'Gross_in_$_M': st.number_input("Gross Revenue ($)", min_value=0.0, value=1000000.0)
+            'Gross_in_$_M': st.number_input("Gross Budget ($)", min_value=0.0, value=00.0)
         }
 
         if st.button("Predict Rating"):
